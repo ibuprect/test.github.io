@@ -323,9 +323,6 @@ footer a {
         flex-wrap: wrap;
         flex-flow: row ;
     }
-    .card {
-        width: 40%;
-    }
 
     footer {
         text-align: center;
