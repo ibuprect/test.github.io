@@ -1,0 +1,333 @@
+body,html {
+    margin: 0;
+    font-family: Roboto,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    display: block;
+}
+
+body {
+    display: block;
+    margin: auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+header {
+    font-family: Shrikhand,"cursive";
+    margin: 0;
+    text-align: center;
+}
+h5 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    animation: loader 1s 1s both;
+}
+.chargement {
+    width: 120px;
+    height: 120px;
+    border: 15px solid #f6f6f6;
+    border-top: 15px solid #9356dc;
+    border-bottom: 15px solid #ff79da;
+    border-radius: 50%;
+    animation: spin 0.5s;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+    display: block;
+}
+
+.location {
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+    font-size: 2em;
+}
+
+.concept  {
+    background: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.concept p  {
+    color: #4d4d4d;
+}
+
+.btn_concept {
+    background-color: #cf64dc;
+    border-radius: 30px;
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+h4 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.tutos li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+    margin: 15px 20px 15px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 2px #c4c4c4;
+    background-color: #f5f5f5;
+}
+
+.operation__steps--number {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 9px;
+    margin-left: -40px;
+}
+
+.tuto li p {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.text {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.partie_ppal {
+    background-color: #f6f6f6;
+}
+
+.cards {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+.new {
+    color: #008766;
+    background: #99E2D0;
+    border: 5px solid #99E2D0;
+    border-radius: 5px;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+.card {
+    border-radius: 25px;
+    box-shadow: 6px 6px grey;
+    position: relative;
+    margin:20px
+}
+
+.restaurant-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    border-radius : 20px  20px 0px 0px
+}
+
+.footer {
+    background-color: rgb(66, 66, 66);
+}
+
+.footer-logo {
+    font-size: 1.25em;
+    color: white;
+    font-family: Shrikhand,"cursive";
+}
+
+footer a {
+    color: white;
+    font-size: 0.75em;
+
+}
+
+.menu_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fleche {
+    position: absolute;
+    left: 20px;
+}
+
+.menu_image img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.menu_titre {
+    font-family: Shrikhand, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu_main {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+.entree {
+    animation: fadein 3s ease-in-out;
+}
+
+.plat {
+    animation: fadein 6s ease-in-out;
+}
+.dessert {
+    animation: fadein 9s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.mebu {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 6px #aaa;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mebu h4 {
+    margin : 0;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.btn_cmd {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_cmd button {
+    background-color: #cf64dc;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+    margin: 30px 0;
+    padding: 20px;
+    width: 50%;
+}
+
+@media screen and (min-width : 760px) {
+    .tutos {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards {
+        flex-wrap: wrap;
+        flex-flow: row ;
+    }
+    .card {
+        width: 40%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
