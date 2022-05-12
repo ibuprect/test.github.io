@@ -53,7 +53,7 @@ h5 {
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 3;
+    z-index: 7;
     background-color: white;
     animation: loader 1s 1s both;
 }
@@ -266,7 +266,7 @@ footer a {
 }
 
 @keyframes fadein {
-    0% {opacity:0;}
+  0% {opacity:0;}
   100% {opacity:1;}
 }
 
@@ -311,7 +311,7 @@ footer a {
     width: 50%;
 }
 
-@media screen and (min-width : 760px) {
+@media desktop {
     .tutos {
         display: flex;
         flex-wrap: wrap;
@@ -322,6 +322,9 @@ footer a {
     .cards {
         flex-wrap: wrap;
         flex-flow: row ;
+    }
+    .card {
+        width: 40%;
     }
 
     footer {
